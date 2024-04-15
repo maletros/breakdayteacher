@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Break Day Teacher",
-    "path":"Break Day Teacher.yyp",
+    "name":"Inimigos",
+    "path":"folders/Sprites/Inimigos.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
