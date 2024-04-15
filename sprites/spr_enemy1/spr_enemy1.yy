@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_enemy1",
-  "bboxMode":0,
-  "bbox_bottom":491,
-  "bbox_left":5,
-  "bbox_right":497,
-  "bbox_top":5,
+  "bboxMode":2,
+  "bbox_bottom":103,
+  "bbox_left":40,
+  "bbox_right":82,
+  "bbox_top":22,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":500,
+  "height":140,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"35c210e2-e557-4d9d-a5c7-8ec1a4d571b5","blendMode":0,"displayName":"default","isLocked":false,"name":"35c210e2-e557-4d9d-a5c7-8ec1a4d571b5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Break Day Teacher",
-    "path":"Break Day Teacher.yyp",
+    "name":"Inimigos",
+    "path":"folders/Sprites/Inimigos.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":500,
+  "width":140,
 }
