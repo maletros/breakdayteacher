@@ -1,9 +1,12 @@
 #region CONTROLES
-var _key_right = keyboard_check(vk_right);
-var _key_left = keyboard_check(vk_left);
-var _key_up = keyboard_check(vk_up);
-var _key_down = keyboard_check(vk_down);
-key_shoot = keyboard_check_pressed(ord("X"));
+
+var _key_right = keyboard_check(ord("D"));
+var _key_left = keyboard_check(ord("A"));
+var _key_up = keyboard_check(ord("W"));
+var _key_down = keyboard_check(ord("S"));
+
+key_shoot = mouse_check_button_pressed(mb_left);
+
 #endregion
 
 #region MOVIMENTAÇÂO
@@ -43,7 +46,7 @@ if _key_down
  //VELOCIDADE DO TIRO
  speed = 10;
  //DIREÇÂO
- direction = -90 + 90 * other.image_xscale;
+ direction = point_direction(x, y, mouse_x, mouse_y)
  //ÂNGULO
  image_angle = direction;
  }

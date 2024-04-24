@@ -15,6 +15,7 @@
     {"name":"obj_enemy5","order":4,"path":"objects/obj_enemy5/obj_enemy5.yy",},
     {"name":"obj_menu","order":2,"path":"objects/obj_menu/obj_menu.yy",},
     {"name":"obj_shoot","order":1,"path":"objects/obj_shoot/obj_shoot.yy",},
+    {"name":"obj_camera","order":9,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"menu","order":1,"path":"rooms/menu/menu.yy",},
     {"name":"spr_enemy2","order":1,"path":"sprites/spr_enemy2/spr_enemy2.yy",},
     {"name":"spr_enemy3","order":2,"path":"sprites/spr_enemy3/spr_enemy3.yy",},
