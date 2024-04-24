@@ -1,4 +1,4 @@
-window_set_size(1280, 720)
+window_set_size(1280, 720);
 
 key_shoot = keyboard_check_pressed(ord("X"));
 

@@ -35,6 +35,7 @@
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_shoot","path":"objects/obj_shoot/obj_shoot.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"mapa1","path":"rooms/mapa1/mapa1.yy",},},
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},},
