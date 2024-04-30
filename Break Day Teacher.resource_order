@@ -6,6 +6,7 @@
     {"name":"Inimigos","order":8,"path":"folders/Objetos/Inimigos.yy",},
     {"name":"Scripts","order":17,"path":"folders/Scripts.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"Mapa1","order":5,"path":"folders/Sprites/Mapa1.yy",},
     {"name":"Inimigos","order":4,"path":"folders/Sprites/Inimigos.yy",},
   ],
   "ResourceOrderSettings":[
