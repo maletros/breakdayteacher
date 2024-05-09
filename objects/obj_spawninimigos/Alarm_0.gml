@@ -1,8 +1,20 @@
-/// Alarm 0 Event
+// Código do Alarme 0:
 if (instance_number(obj_enemy1) + instance_number(obj_enemy3) + instance_number(obj_enemy4) + instance_number(obj_enemy5) < maxEnemies) {
     var randomEnemy = irandom(3); // Gera um número aleatório de 0 a 3
-    var spawnX = irandom_range(32, 928); // Gera uma posição x aleatória
-    var spawnY = irandom_range(32, 298); // Gera uma posição y aleatória
+    
+    // Define a distância mínima entre o spawn e o jogador
+    var minSpawnDistance = 360; // Altere este valor conforme necessário
+    
+    // Variáveis para armazenar as coordenadas de spawn ajustadas
+    var spawnX, spawnY;
+    
+    do {
+        // Gera coordenadas de spawn aleatórias
+        spawnX = irandom_range(32, 928);
+        spawnY = irandom_range(32, 298);
+        
+        // Verifica a distância entre o spawn e o jogador
+    } until (point_distance(spawnX, spawnY, obj_player.x, obj_player.y) >= minSpawnDistance);
     
     switch (randomEnemy) {
         case 0:
