@@ -25,7 +25,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"Break Day Teacher",
   "resources":[
@@ -39,6 +39,7 @@
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_shoot","path":"objects/obj_shoot/obj_shoot.yy",},},
+    {"id":{"name":"obj_spawninimigos","path":"objects/obj_spawninimigos/obj_spawninimigos.yy",},},
     {"id":{"name":"obj_videointro","path":"objects/obj_videointro/obj_videointro.yy",},},
     {"id":{"name":"intro","path":"rooms/intro/intro.yy",},},
     {"id":{"name":"mapa1","path":"rooms/mapa1/mapa1.yy",},},

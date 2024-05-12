@@ -26,7 +26,7 @@ var dist = point_distance(x, y, obj_player.x, obj_player.y);
 var speed_approach = 2;
 
 // Se a distância for menor que um valor específico (por exemplo, 200 pixels), comece a se aproximar do jogador
-if (dist < 200) {
+if (dist < 320) {
     // Calcula a direção em relação ao jogador
     var dir = point_direction(x, y, obj_player.x, obj_player.y);
 
