@@ -1,5 +1,4 @@
-draw_sprite_stretched(background_sprite, 0, 0, 0, display_get_width(), display_get_height());
-
+// Desenha o texto do menu
 draw_set_font(ft_menu);
 var gui_height = display_get_gui_height();
 var margin = 50;
@@ -13,13 +12,6 @@ draw_set_halign(fa_left); // Alinha o texto à esquerda
 for (var i = 0; i < op_max; i++) {
     var y2 = y1 + (margin * (i + 2)); // Deslocamento vertical para as opções abaixo do título
     var string_h = string_height(options[i]);
-
-    if (i == 0) {
-        // Desenha o título do jogo centralizado no topo da tela
-        draw_set_halign(fa_center);
-        draw_text(display_get_gui_width() / 2, y1, "BREAK DAY TEACHER !");
-        draw_set_halign(fa_left); // Retorna o alinhamento horizontal para a esquerda
-    }
 
     if (point_in_rectangle(m_x, m_y, x1, y2 - string_h / 2, x1 + string_width(options[i]), y2 + string_h / 2)) {
         draw_set_color(c_green);
