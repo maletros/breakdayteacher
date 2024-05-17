@@ -1,22 +1,22 @@
-#region MORRER
-// Esta região contém o código para fazer o inimigo desaparecer quando atingido
-
-// Verifique se o inimigo colidiu com o objeto de tiro
+// Esta região contém o código para fazer o inimigo perder vida quando atingido
 if (place_meeting(x, y, obj_shoot)) {
-    // Faça o inimigo desaparecer
-    instance_destroy();
-}
-#endregion
+    // Encontre a instância do tiro
+    var tiro = instance_place(x, y, obj_shoot);
 
-#region MORRER
-// Esta região contém o código para fazer o inimigo desaparecer quando atingido
+    // Reduza a vida do inimigo
+    hp -= 5; // Alteração: Cada tiro causa 5 de dano
 
-// Verifique se o inimigo colidiu com o objeto de tiro
-if (place_meeting(x, y, obj_shoot)) {
-    // Faça o inimigo desaparecer
-    instance_destroy();
+    // Destrua o tiro
+    with (tiro) {
+        instance_destroy();
+    }
+
+    // Verifique se a vida do inimigo chegou a zero ou menos
+    if (hp <= 0) {
+        // Destrua o inimigo
+        instance_destroy();
+    }
 }
-#endregion
 
 // Adicionando o código para fazer o inimigo se mover em direção ao jogador
 // Verifique a distância entre o inimigo e o jogador
@@ -25,7 +25,7 @@ var dist = point_distance(x, y, obj_player.x, obj_player.y);
 // Defina a velocidade de aproximação
 var speed_approach = 2;
 
-// Se a distância for menor que um valor específico (por exemplo, 200 pixels), comece a se aproximar do jogador
+// Se a distância for menor que um valor específico (por exemplo, 320 pixels), comece a se aproximar do jogador
 if (dist < 320) {
     // Calcula a direção em relação ao jogador
     var dir = point_direction(x, y, obj_player.x, obj_player.y);
