@@ -5,7 +5,8 @@ var _key_left = keyboard_check(ord("A"));
 var _key_up = keyboard_check(ord("W"));
 var _key_down = keyboard_check(ord("S"));
 
-key_shoot = mouse_check_button_pressed(mb_left);
+// Verifica se o botão esquerdo do mouse está pressionado
+key_shoot = mouse_check_button(mb_left);
 
 #endregion
 
@@ -31,6 +32,8 @@ if _key_down
     y += 1;
 }
 
+#endregion
+
 #region TIRO
 
 var _flipped = direction;
@@ -38,11 +41,18 @@ var _gun_x = (x + 4) * (_flipped);
 var _xx = x + lengthdir_x(15, image_angle);
 var _y_offset = lengthdir_y(-20, image_angle);
 
-if key_shoot // Removemos a verificação global.bullets > 0
+// Decrementa o timer do cooldown se for maior que zero
+if shoot_timer > 0
 {
+    shoot_timer--;
+}
+
+// Verifica se o botão do mouse está pressionado e se o cooldown terminou
+if key_shoot && shoot_timer <= 0
+{
+    // Criação do tiro
     with (instance_create_layer(_xx, y + 3, "Shoot", obj_shoot))
     {
-        // Removemos global.bullets--;
         // VELOCIDADE DO TIRO
         speed = 10;
         // DIREÇÃO
@@ -50,8 +60,8 @@ if key_shoot // Removemos a verificação global.bullets > 0
         // ÂNGULO
         image_angle = direction;
     }
+    // Reinicia o cooldown
+    shoot_timer = shoot_cooldown;
 }
-
-#endregion
 
 #endregion
