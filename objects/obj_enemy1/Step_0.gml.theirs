@@ -1,10 +1,10 @@
-// Esta região contém o código para fazer o inimigo perder vida quando atingido
+// Esta regiÃ£o contÃ©m o cÃ³digo para fazer o inimigo perder vida quando atingido
 if (place_meeting(x, y, obj_shoot)) {
-    // Encontre a instância do tiro
+    // Encontre a instÃ¢ncia do tiro
     var tiro = instance_place(x, y, obj_shoot);
 
     // Reduza a vida do inimigo
-    hp -= 5; // Alteração: Cada tiro causa 5 de dano
+    hp -= 5; // AlteraÃ§Ã£o: Cada tiro causa 5 de dano
 
     // Destrua o tiro
     with (tiro) {
@@ -18,19 +18,19 @@ if (place_meeting(x, y, obj_shoot)) {
     }
 }
 
-// Adicionando o código para fazer o inimigo se mover em direção ao jogador
-// Verifique a distância entre o inimigo e o jogador
+// Adicionando o cÃ³digo para fazer o inimigo se mover em direÃ§Ã£o ao jogador
+// Verifique a distÃ¢ncia entre o inimigo e o jogador
 var dist = point_distance(x, y, obj_player.x, obj_player.y);
 
-// Defina a velocidade de aproximação
+// Defina a velocidade de aproximaÃ§Ã£o
 var speed_approach = 2;
 
-// Se a distância for menor que um valor específico (por exemplo, 320 pixels), comece a se aproximar do jogador
+// Se a distÃ¢ncia for menor que um valor especÃ­fico (por exemplo, 320 pixels), comece a se aproximar do jogador
 if (dist < 320) {
-    // Calcula a direção em relação ao jogador
+    // Calcula a direÃ§Ã£o em relaÃ§Ã£o ao jogador
     var dir = point_direction(x, y, obj_player.x, obj_player.y);
 
-    // Ajusta a velocidade horizontal e vertical para mover em direção ao jogador
+    // Ajusta a velocidade horizontal e vertical para mover em direÃ§Ã£o ao jogador
     hspd = lengthdir_x(speed_approach, dir);
     vspd = lengthdir_y(speed_approach, dir);
 } else {
@@ -39,7 +39,7 @@ if (dist < 320) {
     vspd = 0;
 }
 
-// Aplica a gravidade (se necessário)
+// Aplica a gravidade (se necessÃ¡rio)
 vspd += grv;
 
 // Move o inimigo
