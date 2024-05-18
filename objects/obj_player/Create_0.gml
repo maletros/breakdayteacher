@@ -7,8 +7,14 @@ key_shoot = false;
 shoot_cooldown = 20; // Ajuste este valor conforme necessário
 shoot_timer = 0; // Timer para controle do cooldown
 
-spd = 5;
+spd = 100;
 hspd = 0;
 vspd = 0;
 grv = 0.4;
-global.bullets = 100; // Este valor não será mais usado, mas pode ser removido se desejar
+
+hp = 100;
+max_hp = 100;
+xp = 0;
+global.bullets = 50000;
+alfa_hit = 0;
+alarm[0] = 0;

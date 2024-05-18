@@ -1,0 +1,47 @@
+// Esta regiÃ£o contÃ©m o cÃ³digo para fazer o inimigo perder vida quando atingido
+if (place_meeting(x, y, obj_shoot)) {
+    // Encontre a instÃ¢ncia do tiro
+    var tiro = instance_place(x, y, obj_shoot);
+
+    // Reduza a vida do inimigo
+    hp -= 5; // AlteraÃ§Ã£o: Cada tiro causa 5 de dano
+
+    // Destrua o tiro
+    with (tiro) {
+        instance_destroy();
+    }
+
+    // Verifique se a vida do inimigo chegou a zero ou menos
+    if (hp <= 0) {
+        // Destrua o inimigo
+        instance_destroy();
+    }
+}
+
+// Adicionando o cÃ³digo para fazer o inimigo se mover em direÃ§Ã£o ao jogador
+// Verifique a distÃ¢ncia entre o inimigo e o jogador
+var dist = point_distance(x, y, obj_player.x, obj_player.y);
+
+// Defina a velocidade de aproximaÃ§Ã£o
+var speed_approach = 2;
+
+// Se a distÃ¢ncia for menor que um valor especÃ­fico (por exemplo, 320 pixels), comece a se aproximar do jogador
+if (dist < 320) {
+    // Calcula a direÃ§Ã£o em relaÃ§Ã£o ao jogador
+    var dir = point_direction(x, y, obj_player.x, obj_player.y);
+
+    // Ajusta a velocidade horizontal e vertical para mover em direÃ§Ã£o ao jogador
+    hspd = lengthdir_x(speed_approach, dir);
+    vspd = lengthdir_y(speed_approach, dir);
+} else {
+    // Se o jogador estiver longe demais, pare de se mover
+    hspd = 0;
+    vspd = 0;
+}
+
+// Aplica a gravidade (se necessÃ¡rio)
+vspd += grv;
+
+// Move o inimigo
+x += hspd;
+y += vspd;
