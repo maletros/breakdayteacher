@@ -2,7 +2,7 @@
 // Esta região contém o código para fazer o inimigo desaparecer quando atingido
 
 // Verifique se o inimigo colidiu com o objeto de tiro
-if (place_meeting(x, y, obj_shoot)) {
+if (place_meeting(x, y, obj_shoot) and hp = 0) {
     // Faça o inimigo desaparecer
     instance_destroy();
 }
