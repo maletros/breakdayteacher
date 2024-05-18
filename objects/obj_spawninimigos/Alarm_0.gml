@@ -41,6 +41,6 @@ if (spawnEnemies) { // Verifica se pode spawnar inimigos
         }
     }
     
-    // Define um novo tempo de alarme entre os valores baixo e alto definidos no evento Create
-    alarm[0] = irandom_range(spawnRateLow, spawnRateHigh);
+    // Define um novo tempo de alarme fixo para o próximo spawn em frames
+    alarm[0] = spawnRateFrames;
 }
