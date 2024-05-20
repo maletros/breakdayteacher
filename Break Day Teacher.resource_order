@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"spr_mapa","order":1,"path":"sprites/spr_mapa/spr_mapa.yy",},
+  ],
 }

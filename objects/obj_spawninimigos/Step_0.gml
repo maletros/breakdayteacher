@@ -15,9 +15,6 @@ if (room == mapa1) { // Verifica se está na sala "mapa1"
         with (obj_enemy4) {
             instance_destroy();
         }
-        with (obj_enemy5) {
-            instance_destroy();
-        }
         
         // Criar apenas um obj_enemy2 no centro do mapa
         var centerX = room_width / 2;

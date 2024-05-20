@@ -1,6 +1,6 @@
 /// Alarm Event 0
 if (spawnEnemies) { // Verifica se pode spawnar inimigos
-    if (instance_number(obj_enemy1) + instance_number(obj_enemy3) + instance_number(obj_enemy4) + instance_number(obj_enemy5) < maxEnemies) {
+    if (instance_number(obj_enemy1) + instance_number(obj_enemy3) + instance_number(obj_enemy4) < maxEnemies) {
         var randomEnemy = irandom(3); // Gera um número aleatório de 0 a 3
         
         // Define a distância mínima entre o spawn e o jogador
@@ -31,11 +31,6 @@ if (spawnEnemies) { // Verifica se pode spawnar inimigos
             case 2:
                 if (instance_number(obj_enemy4) < maxEnemies) {
                     instance_create_layer(spawnX, spawnY, layer, obj_enemy4);
-                }
-                break;
-            case 3:
-                if (instance_number(obj_enemy5) < maxEnemies) {
-                    instance_create_layer(spawnX, spawnY, layer, obj_enemy5);
                 }
                 break;
         }
