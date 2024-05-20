@@ -1,6 +1,10 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Sons","order":1,"path":"folders/Sons.yy",},
+    {"name":"Player","order":2,"path":"folders/Sprites/Player.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"spr_mapa","order":1,"path":"sprites/spr_mapa/spr_mapa.yy",},
+    {"name":"spr_player__","order":1,"path":"sprites/spr_player__/spr_player__.yy",},
   ],
 }
