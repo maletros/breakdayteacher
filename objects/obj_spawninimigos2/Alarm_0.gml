@@ -11,8 +11,8 @@ if (spawnEnemies) { // Verifica se pode spawnar inimigos
         
         do {
             // Gera coordenadas de spawn aleatórias
-            spawnX = irandom_range(32, 928);
-            spawnY = irandom_range(32, 298);
+            spawnX = irandom_range(300, 1800);
+            spawnY = irandom_range(1700, 1650);
             
             // Verifica a distância entre o spawn e o jogador
         } until (point_distance(spawnX, spawnY, obj_player.x, obj_player.y) >= minSpawnDistance);

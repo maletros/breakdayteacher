@@ -23,7 +23,7 @@ if (place_meeting(x, y, obj_shoot)) {
 var dist = point_distance(x, y, obj_player.x, obj_player.y);
 
 // Defina a velocidade de aproximação
-var speed_approach = 1;
+var speed_approach = 0.8;
 
 // Se a distância for menor que um valor específico (por exemplo, 320 pixels), comece a se aproximar do jogador
 if (dist < 800) {

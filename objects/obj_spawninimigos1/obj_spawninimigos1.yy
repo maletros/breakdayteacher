@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_spawninimigos",
+  "%Name":"obj_spawninimigos1",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_spawninimigos",
+  "name":"obj_spawninimigos1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
