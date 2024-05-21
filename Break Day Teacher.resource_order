@@ -4,7 +4,10 @@
     {"name":"Player","order":2,"path":"folders/Sprites/Player.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"spr_mapa","order":1,"path":"sprites/spr_mapa/spr_mapa.yy",},
+    {"name":"obj_gameover","order":1,"path":"objects/obj_gameover/obj_gameover.yy",},
+    {"name":"game_over","order":1,"path":"rooms/game_over/game_over.yy",},
+    {"name":"spr_gameover","order":4,"path":"sprites/spr_gameover/spr_gameover.yy",},
+    {"name":"spr_mapa1","order":3,"path":"sprites/spr_mapa1/spr_mapa1.yy",},
     {"name":"spr_player__","order":1,"path":"sprites/spr_player__/spr_player__.yy",},
   ],
 }

@@ -16,5 +16,5 @@ hp = 100;
 max_hp = 100;
 xp = 0;
 global.bullets = 50000;
-// alfa_hit = 0;
-// alarm[0] = 0;
+alfa_hit = 0;
+alarm[0] = 0;

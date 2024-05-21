@@ -15,11 +15,13 @@ key_shoot = mouse_check_button(mb_left);
 if _key_right
 {
     x += 1;
+	image_xscale = 1;
 }
 
 if _key_left
 {
     x -= 1;
+	image_xscale = -1;
 }
 
 if _key_up
@@ -66,17 +68,17 @@ if _key_down
 
  #region COMBATE
  
- // if alarm[0] > 0 {
-	 // if image_alpha >= 1 {
-		 // alfa_hit = -0.05;
-	 // } else if image_alpha <= 0 {
-		 // alfa_hit = 0.05;
-	 // }
+ if alarm[0] > 0 {
+	 if image_alpha >= 1 {
+		 alfa_hit = -0.05;
+	 } else if image_alpha <= 0 {
+		 alfa_hit = 0.05;
+	 }
 	 
-	 // image_alpha += alfa_hit;
- // } else {
-	 // image_alpha = 1;
- // }
+	 image_alpha += alfa_hit;
+ } else {
+	 image_alpha = 1;
+ }
  
  // #endregion
 
