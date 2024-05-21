@@ -4,7 +4,7 @@ var positions = [
 ];
 
 // Definir a cor #00bc2a
-var custom_green = make_color_rgb(255, 255, 255);
+var custom_green = make_color_rgb(255, 0, 0);
 
 // Desenha o texto do menu
 draw_set_font(ft_menu);

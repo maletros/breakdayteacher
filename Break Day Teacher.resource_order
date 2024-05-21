@@ -7,6 +7,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_gameover","order":1,"path":"objects/obj_gameover/obj_gameover.yy",},
+    {"name":"obj_map","order":3,"path":"objects/obj_map/obj_map.yy",},
     {"name":"obj_win","order":2,"path":"objects/obj_win/obj_win.yy",},
     {"name":"rm_game_over","order":3,"path":"rooms/rm_game_over/rm_game_over.yy",},
     {"name":"rm_intro","order":2,"path":"rooms/rm_intro/rm_intro.yy",},
@@ -14,6 +15,7 @@
     {"name":"rm_win","order":4,"path":"rooms/rm_win/rm_win.yy",},
     {"name":"snd_boss","order":1,"path":"sounds/snd_boss/snd_boss.yy",},
     {"name":"snd_gameover","order":2,"path":"sounds/snd_gameover/snd_gameover.yy",},
+    {"name":"snd_map","order":5,"path":"sounds/snd_map/snd_map.yy",},
     {"name":"snd_start_menu","order":4,"path":"sounds/snd_start_menu/snd_start_menu.yy",},
     {"name":"snd_win","order":3,"path":"sounds/snd_win/snd_win.yy",},
     {"name":"spr_menubackground","order":1,"path":"sprites/spr_menubackground/spr_menubackground.yy",},
