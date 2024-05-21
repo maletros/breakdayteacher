@@ -36,6 +36,7 @@ for (var i = 0; i < op_max; i++) {
         // Detectar clique na área combinada
         if (point_in_rectangle(m_x, m_y, pos_x, pos_y - line_spacing / 2, pos_x + string_width(line1), pos_y + line_spacing * 1.5)) {
             if (mouse_check_button_pressed(mb_left)) {
+				audio_stop_sound(snd_menu_music);
                 room_goto(mapa1); // Transição para a room "mapa1"
             }
         }

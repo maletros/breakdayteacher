@@ -6,5 +6,5 @@ if (timer > 0)
 
 if (timer == 0)
 {
-    room_goto(menu);
+    room_goto(rm_menu);
 }
