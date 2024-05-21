@@ -9,8 +9,8 @@
   "name":"obj_map",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Screens",
+    "path":"folders/Objetos/Screens.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -10,8 +10,8 @@
   "name":"obj_videointro",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Screens",
+    "path":"folders/Objetos/Screens.yy",
   },
   "parentObjectId":null,
   "persistent":false,

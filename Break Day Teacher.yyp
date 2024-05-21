@@ -13,6 +13,7 @@
     {"$GMFolder":"","%Name":"Cenas","folderPath":"folders/Cenas.yy","name":"Cenas","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objetos","folderPath":"folders/Objetos.yy","name":"Objetos","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Screens","folderPath":"folders/Objetos/Screens.yy","name":"Screens","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"HUD","folderPath":"folders/Objetos/HUD.yy","name":"HUD","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inimigos","folderPath":"folders/Objetos/Inimigos.yy","name":"Inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
