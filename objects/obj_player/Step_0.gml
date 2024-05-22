@@ -16,12 +16,14 @@ if _key_right
 {
     x += 1;
 	image_xscale = 1;
+	sprite_index = spr_player_walking;
 }
 
 if _key_left
 {
     x -= 1;
 	image_xscale = -1;
+	sprite_index = spr_player_walking;
 }
 
 if _key_up
@@ -32,6 +34,11 @@ if _key_up
 if _key_down
 {
     y += 1;
+}
+
+if (!_key_right && !_key_left)
+{
+    sprite_index = spr_player;  // Defina o sprite de inatividade
 }
 
  #region TIRO

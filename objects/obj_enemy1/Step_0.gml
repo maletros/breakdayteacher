@@ -41,7 +41,15 @@ if (dist < 800) {
     // Ajusta a velocidade horizontal e vertical para mover em direção ao jogador
     hspd = lengthdir_x(speed_approach, dir);
     vspd = lengthdir_y(speed_approach, dir);
+	
+	// Inverte o sprite conforme a direção do movimento horizontal
+    if (hspd > 0) {
+        image_xscale = 1;  // Movendo para a direita
+    } else if (hspd < 0) {
+        image_xscale = -1; // Movendo para a esquerda
+    }
 } else {
+	
     // Se o jogador estiver longe demais, pare de se mover
     hspd = 0;
     vspd = 0;
